@@ -21,14 +21,14 @@ namespace PolyEngine {
 
 		struct DebugVertex {
 			glm::vec2 position;
-			ColorRGBA8 color;
+			PolyEngine::ColorRGBA8 color;
 		};
 	private:
-		GLSLProgram m_program;
+		PolyEngine::GLSLProgram m_program;
 		std::vector<DebugVertex> m_verts;
 		std::vector<GLuint> m_indices;
 		GLuint m_vbo = 0, m_vao = 0, m_ibo = 0;
-		int m_numElements = 0;
+		size_t m_numElements = 0;
 	};
 
 }
